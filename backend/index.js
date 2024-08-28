@@ -2,7 +2,7 @@ require("dotenv").config()
 const app= require("./app");
 const connect = require("./config/db");
 
-const port=process.env.PORT
+const port=process.env.PORT || 5000
 
 // Uncaught error handling
 process.on("uncaughtException" , (err)=>{
